@@ -593,7 +593,7 @@ function FornaContainer(h, f) {
                 return "5'";
             else if(b.num == maxNodes)
                 return "3'";
-        }).style({"fill":"#999","font-size":8}).style("transform", "translate(-3px,-10px)");
+        }).style({"fill":"#ccc","font-size":8}).style("transform", "translate(-3px,-10px)");
         gnodesEnter.append("text").text(function(b) {
             return b.name
         }).attr("text-anchor", "middle").attr("font-size", 8).attr("font-weight", "bold").attr("y", 2.5).attr("class", "node-label").attr("label_type", function(b) {

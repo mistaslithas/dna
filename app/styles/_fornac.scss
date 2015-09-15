@@ -6,8 +6,8 @@ svg {
 }
 
 circle.node {
-  stroke: #ccc;
-  stroke-width: 1px;
+  // stroke: #ccc;
+  // stroke-width: 1px;
   opacity: 1;
   fill: white;
   cursor: pointer;
@@ -100,6 +100,7 @@ text.node-label {
 
 text {
     pointer-events: none;
+    fill: #333;
 }
 
 g.gnode {

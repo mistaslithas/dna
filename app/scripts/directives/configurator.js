@@ -47,7 +47,7 @@ angular.module('dnaApp')
 			scope.$apply();
 		});
 		// edit base font
-		configurator.add(Configuration, 'baseFont', { Times: 'times', Arial: 'arial', Courier: 'courier', Helvetica: 'helvetica' }).onChange(function(value){
+		configurator.add(Configuration, 'baseFont', { SourceCodePro: 'source_code_pro', Times: 'times', Arial: 'arial', Courier: 'courier', Helvetica: 'helvetica' }).onChange(function(value){
 			scope.$apply();
 		});
 		// edit base line width

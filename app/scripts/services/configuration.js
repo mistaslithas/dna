@@ -16,16 +16,16 @@ angular.module('dnaApp')
 
     // the base colors
     var baseColors = {
-      A:"#FF0000",
-      C:"#FF0000",
-      G:"#FF0000",
-      N:"#FF0000",
-      T:"#FF0000"
+      A:"rgb(127,203,222)",
+      C:"rgb(127,203,222)",
+      G:"rgb(127,203,222)",
+      N:"rgb(127,203,222)",
+      T:"rgb(127,203,222)"
     };
     // the base radius
     var baseRadius = 5;
     // the base font
-    var baseFont = 'Times';
+    var baseFont = 'Source Code Pro';
     // the base line width
     var lineWidth = 1;
 

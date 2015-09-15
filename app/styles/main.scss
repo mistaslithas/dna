@@ -15,7 +15,10 @@ html, body {
 
 body {
   display: flex;
-  background: black;
+  background: linear-gradient(135deg,  #8fc6c8 0%,#1b4a57 100%); /* W3C */
+  margin: 0 8px;
+  font-family: "Source Code Pro";
+  font-weight: 100;
 
   div[ng-view] {
     display: flex;
@@ -26,8 +29,6 @@ body {
     header {
       color: white;
       padding: 20px 0;
-      font-family: "Source Code Pro";
-      font-weight: 100;
       font-size: 15px;
     }
 
@@ -67,8 +68,13 @@ body {
     }
 
     visualization {
-      flex: 1;
+      position: absolute;
+      top: 100px; right: 0; bottom: 0; left: 0;
       outline: none;
+
+      svg {
+        fill: rgba(0,0,0,0);
+      }
     }
   }
 }
@@ -86,6 +92,9 @@ body {
 .helvetica {
   font-family: "Helvetica";
 }
+.source_code_pro {
+  font-family: "Source Code Pro";
+}
 .times {
   font-family: "Times";
 }
@@ -93,5 +102,6 @@ body {
 // CONTROL PANEL --------------------------------
 // position the DAT.gui control panel
 .dg.ac {
-  top: 98px !important;
+  top: 100px !important;
+  right: -5px !important;
 }
