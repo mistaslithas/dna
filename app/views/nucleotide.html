@@ -1,0 +1,17 @@
+<!-- the base -->
+<!-- angular drag and drop directives from the ngDraggable module: https://github.com/fatlinesofcode/ngDraggable -->
+<!-- drag and drop is used as the mechanism for new connections between bases -->
+<!-- this component is repeated in the sequence directive -->
+<div 
+	ng-style="{'background':configuration.baseColors[nucleotide.base]}"
+	ng-drag="nucleotide.construct == '.'" 
+	ng-drag-data="$index" 
+	ng-mousedown="startConnection()"
+	ng-drop="nucleotide.construct == '.' && nucleotide.base == connector.compliment" 
+	ng-drop-success="makeConnection($data,$event,$index)"
+	ng-drag-stop="cancelConnection()">
+	{{nucleotide.base}}
+</div>
+
+<!-- the structure construct -->
+<div class="construct">{{nucleotide.construct}}</div>

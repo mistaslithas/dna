@@ -1,0 +1,9 @@
+<!-- the base representation in sequence directive -->
+<!-- angular bindings for nucleotide highlighting on hover -->
+<nucleotide 
+	ng-repeat="nucleotide in nucleotides track by $index"
+	ng-class="{unhighlighted:highlighter.selectedBaseIndex >= 0 && highlighter.selectedBaseIndex != $index, uncomplimentary: uncomplimentary}"
+	ng-mouseenter="highlightNucleotide(nucleotide, $index)"
+	ng-mouseleave="unhighlightNucleotide()">
+	>
+</nucleotide>
